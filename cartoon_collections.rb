@@ -10,16 +10,15 @@ def summon_captain_planet(array)
   end
 end
 # ^summon_captain_planet code format is ideal^
+
 def long_planeteer_calls(array)
-  result = true
-  array.each do [i]
-    if i.length > 4
-      return result = true
-    else
-      result = false
-    end
+  i = 0 
+  if array.any? {|i| i.length >4}
+    return true 
+  else
+    return false 
+  i += 1
   end
-  
 end
 
 def find_the_cheese(array)
